@@ -17,7 +17,8 @@ export class LibraryPage implements OnInit {
   ) {}
   //defining type
   quoteCollection: {category: string, quotes: Quote[], icon: string}[];
-  quotesPage = QuotesPage
+  quotesPage = QuotesPage;
+  
   ngOnInit() {
     this.quoteCollection = quotes;
   }
