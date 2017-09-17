@@ -22,8 +22,9 @@ export class QuotePage {
   }
 
 
-  onClose() {
-    this.viewCtrl.dismiss();
+  onClose(remove = false) {
+    // dismissing current view(modal) while passing arguments back
+    this.viewCtrl.dismiss(remove);
   }
 
 }
