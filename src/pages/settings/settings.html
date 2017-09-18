@@ -21,6 +21,7 @@
                 </ion-label>
             </ion-col>
             <ion-col>
+              <!-- ionChange emitts an event and checked is subscribed to boolean -->
                 <ion-toggle 
                  (ionChange)="onToggle($event)"
                  [checked]="checkAltBackground()">
