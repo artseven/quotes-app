@@ -18,4 +18,11 @@ export class QuotesService {
     getFavoriteQuotes() {
         return this.favoriteQuotes.slice();
     }
+
+    isQuoteFavorite(quote: Quote) {
+        //Checking array to find elements with the same id as the id of quote library elements
+        return this.favoriteQuotes.find((quoteEl: Quote)=> {
+            return quoteEl.id == quote.id;
+        })
+    }
 }

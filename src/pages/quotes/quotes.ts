@@ -27,7 +27,7 @@ export class QuotesPage implements OnInit {
   //  Page template renders before data becomes available so it gives an error
   // }
 
-  onAddToFavourite(selectedQuote: Quote) {
+  onAddToFavourites(selectedQuote: Quote) {
     const alert = this.alertCtrl.create({
       title: 'Add Quote',
       subTitle: 'Are you sure?',
