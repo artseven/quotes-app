@@ -25,4 +25,5 @@ export class QuotesService {
             return quoteEl.id == quote.id;
         });
     }
+
 }

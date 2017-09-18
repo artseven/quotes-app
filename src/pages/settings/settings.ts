@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { SettingsService } from '../../services/settings';
+import { Toggle } from 'ionic-angular';
+import { Component, EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   templateUrl: 'settings.html',
 })
 export class SettingsPage {
+  
+  constructor(private settingsService: SettingsService) {}
 
+  onToggle(toggle: Toggle) {
+    this.settingsService.setBackground(toggle.checked);
+  }
 }
