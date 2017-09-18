@@ -1,4 +1,3 @@
-import { SettingsService } from '../services/settings';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -6,6 +5,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { QuotesService } from '../services/quotes';
+import { SettingsService } from '../services/settings';
 
 import { MyApp } from './app.component';
 import { SettingsPage } from '../pages/settings/settings';
@@ -43,7 +43,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     StatusBar,
     SplashScreen,
     QuotesService,
-    SettingsService
+    SettingsService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
